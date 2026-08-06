@@ -35,12 +35,14 @@ export default function Header() {
 
   return (
     <header className="w-full md:pb-12 md:pt-4">
-      <img
-        src={`${domain}wp-content/uploads/2026/08/logo-header.png`}
-        className="h-10 md:ml-auto mr-6 hidden md:block"
-        alt=""
-      />
-      <div className="mx-auto max-w-3xl 2xl:max-w-4xl  md:box-shadow-custom rounded-full py-4 relative md:bg-white">
+      <div className="mx-auto max-w-5xl 2xl:max-w-5xl">
+        <img
+          src={`${domain}wp-content/uploads/2026/08/logo-header.png`}
+          className="h-8 md:ml-auto mr-6 hidden md:block mb-4"
+          alt=""
+        />
+      </div>
+      <div className="mx-auto max-w-5xl 2xl:max-w-5xl  md:box-shadow-custom rounded-full py-4 relative md:bg-white">
         <nav className="flex md:justify-between md:px-10 px-4 gap-18 md:gap-0  w-full z-50 ">
           <div className=" z-50">
             <a href="/" className="flex z-50">

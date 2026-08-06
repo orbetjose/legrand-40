@@ -240,7 +240,7 @@ export default function Home() {
                   />
                 </div>
 
-                <a href="" className="px-3 py-1 border rounded-md font-light">
+                <a target="_blank" href="https://share.google/ElJ24UuUzREIapt4S" className="px-3 py-1 border rounded-md font-light">
                   ¿Cómo llegar?
                 </a>
               </div>

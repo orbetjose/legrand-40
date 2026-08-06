@@ -84,7 +84,7 @@ export default function Footer() {
               SÍGUENOS
             </span>
             <div className="flex items-center gap-4">
-              <a href="">
+              <a href="https://www.youtube.com/@LaboratoriosLegrand" target="_blank">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/yt-icon.png`}
                   className="h-7"
@@ -98,7 +98,7 @@ export default function Footer() {
                   alt=""
                 />
               </a>
-              <a href="">
+              <a href="linkedin.com/company/laboratorios-legrand-s.a" target="_blank">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/linkedin-icon.png`}
                   className="h-7"
