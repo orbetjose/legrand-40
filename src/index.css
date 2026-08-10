@@ -43,6 +43,7 @@
   --color-primary-red: #d8072f;
   --color-primary-gray: #838383;
   --color-secondary-gray: #575756;
+  --color-primary-gold: #c9905d;
 
   --breakpoint-3xl: 120rem;
 }
@@ -58,7 +59,7 @@
 }
 
 .description-accordion.active {
-  max-height: 100px;
+  max-height: 300px;
   transition: max-height 0.3s ease-in;
 }
 
@@ -66,6 +67,10 @@
   box-shadow:
     rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
     rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.translate-middle {
+  transform: translate(-50%,-50%);
 }
 
 @media (min-width: 768px) {

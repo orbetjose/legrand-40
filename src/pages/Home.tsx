@@ -5,37 +5,32 @@ export default function Home() {
     {
       image: "wp-content/uploads/2026/08/tiquetes-image.png",
       title: "TIQUETES",
+      link: "#",
     },
     {
       image: "wp-content/uploads/2026/08/vestimenta-image.png",
       title: "CÓDIGO DE VESTIMENTA",
+      link: "codigo-de-vestimenta",
     },
     {
       image: "wp-content/uploads/2026/08/horarios-image.png",
       title: "HORARIOS",
+      link: "#",
     },
   ];
   const faqs = [
     {
-      title: "¿Cómo me inscribo al evento?",
-      description: "Lorem ipsum",
-    },
-    {
       title: "¿El hospedaje está incluido?",
-      description: "Lorem ipsum",
+      description: "Sí. El hospedaje está incluido durante las fechas correspondientes al evento.",
     },
     {
-      title: "¿Puedo llevar acompañante?",
-      description: "Lorem ipsum",
+      title: "¿Puedo llevar un acompañante?",
+      description: "El acceso al evento es exclusivo para la persona invitada, por lo que no es posible asistir al evento con un acompañante. Sin embargo, tu acompañante puede viajar contigo y disfrutar de la ciudad sin ningún inconveniente a partir de la noche del 5 de [mes]. Además, contará con una tarifa especial en el hotel durante su estadía.",
     },
     {
-      title: "¿Habrá transporte desde el aeropuerto al hotel?",
-      description: "Lorem ipsum",
-    },
-    {
-      title: "¿A quién puedo contactar si tengo más dudas?",
-      description: "Lorem ipsum",
-    },
+      title: "¿Habrá transporte desde el aeropuerto hasta el hotel?",
+      description: "Sí. El transporte está incluido y contempla el traslado de ida y regreso entre el aeropuerto y el hotel: Aeropuerto → Hotel → Aeropuerto.",
+    }
   ];
   const cardsPrimary = [
     {
@@ -163,8 +158,9 @@ export default function Home() {
           </h2>
           <div className="flex gap-4 md:gap-0 justify-evenly items-center h-full overflow-x-auto md:overflow-visible scrollbar-hide">
             {info.map((item, index) => (
-              <div
+              <a
                 key={index}
+                href={item.link}
                 className="relative w-72 h-96 shrink-0 md:w-1/4 md:h-100 flex items-end justify-center hover:scale-101 transition-all duration-200 cursor-pointer"
               >
                 <img
@@ -175,7 +171,7 @@ export default function Home() {
                 <span className="text-center text-white relative pb-4 font-semibold text-xl">
                   {item.title}
                 </span>
-              </div>
+              </a>
             ))}
           </div>
         </div>
@@ -240,7 +236,11 @@ export default function Home() {
                   />
                 </div>
 
-                <a target="_blank" href="https://share.google/ElJ24UuUzREIapt4S" className="px-3 py-1 border rounded-md font-light">
+                <a
+                  target="_blank"
+                  href="https://share.google/ElJ24UuUzREIapt4S"
+                  className="px-3 py-1 border rounded-md font-light"
+                >
                   ¿Cómo llegar?
                 </a>
               </div>

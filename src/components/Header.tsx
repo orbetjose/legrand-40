@@ -64,11 +64,18 @@ export default function Header() {
                   .replace(/[\u0300-\u036f]/g, "") // Elimina acentos
                   .replace(/\s+/g, "-") // Reemplaza uno o más espacios por un guion
                   .toLowerCase();
+                const isHome = window.location.pathname === "/";
                 if (item.permalink === "#") {
                   return (
                     <li key={index}>
                       <button
-                        onClick={() => scrollToSection(namesSections)}
+                        onClick={() => {
+                          if (isHome) {
+                            scrollToSection(namesSections);
+                          } else {
+                            window.location.href = `/#${namesSections}`;
+                          }
+                        }}
                         className="uppercase pb-1 relative cursor-pointer "
                       >
                         {item.name}
@@ -80,7 +87,6 @@ export default function Header() {
                 if (relativePath.includes("wp")) {
                   relativePath = relativePath.replace("/wp", "");
                 }
-
                 return (
                   <li key={index}>
                     <button
@@ -120,11 +126,19 @@ export default function Header() {
                       .replace(/[\u0300-\u036f]/g, "") // Elimina acentos
                       .replace(/\s+/g, "-") // Reemplaza uno o más espacios por un guion
                       .toLowerCase();
+                    const isHome = window.location.pathname === "/";
+
                     if (item.permalink === "#") {
                       return (
                         <li key={index}>
                           <button
-                            onClick={() => scrollToSection(namesSections)}
+                            onClick={() => {
+                              if (isHome) {
+                                scrollToSection(namesSections);
+                              } else {
+                                window.location.href = `/#${namesSections}`;
+                              }
+                            }}
                             className="uppercase pb-1 relative cursor-pointer "
                           >
                             {item.name}
