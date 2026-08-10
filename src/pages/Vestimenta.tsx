@@ -223,7 +223,7 @@ export default function Vestimenta() {
       </section>
       <section className="pt-4 pb-8">
         <div className="bg-primary-red rounded-full w-fit mx-auto px-6 py-1">
-            <a href="#" className="font-semibold text-white text-xl">Más información</a>
+            <a href="https://wa.me/573004860661" className="font-semibold text-white text-xl">Más información</a>
         </div>
 
       </section>
