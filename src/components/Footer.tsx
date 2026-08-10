@@ -98,7 +98,7 @@ export default function Footer() {
                   alt=""
                 />
               </a>
-              <a href="linkedin.com/company/laboratorios-legrand-s.a" target="_blank">
+              <a href="https://www.linkedin.com/company/laboratorios-legrand-s.a" target="_blank">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/linkedin-icon.png`}
                   className="h-7"

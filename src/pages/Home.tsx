@@ -31,6 +31,11 @@ export default function Home() {
       title: "¿Habrá transporte desde el aeropuerto hasta el hotel?",
       description: "Sí. El transporte está incluido y contempla el traslado de ida y regreso entre el aeropuerto y el hotel: Aeropuerto → Hotel → Aeropuerto.",
     }
+    ,
+    {
+      title: "¿A quién puedo contactar si tengo más dudas?",
+      description: "David Vergara - dvergara@laboratorioslegrand.com - +57 300 486 0661",
+    }
   ];
   const cardsPrimary = [
     {
@@ -226,7 +231,7 @@ export default function Home() {
               </p>
               <div className="flex justify-center md:justify-start gap-4 pt-4">
                 <div className="flex bg-primary-red rounded-md px-3 py-1 font-semibold gap-4 items-center hover:bg-primary-red/70 transition-all duration-200 cursor-pointer">
-                  <a href="" className="">
+                  <a href="https://share.google/ElJ24UuUzREIapt4S" className="">
                     Ver ubicación
                   </a>
                   <img
@@ -411,7 +416,7 @@ export default function Home() {
             </div>
             <div className="flex flex-col items-center md:items-start gap-2">
               <div className="bg-primary-red rounded px-4 w-fit text-white py-1 flex items-center gap-4 hover:bg-primary-red/70 transition-all duration-200 cursor-pointer">
-                <a href="#" className="font-semibold">
+                <a href="https://wa.me/573004860661" className="font-semibold">
                   CONTÁCTANOS
                 </a>
                 <img
