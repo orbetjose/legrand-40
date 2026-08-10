@@ -1,20 +1,6 @@
 export default function Vestimenta() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
-  const cardsPrimary = [
-    {
-      image: "wp-content/uploads/2026/08/emocion-image.png",
-      title: "EMOCIÓN",
-      subtitle: "El latido que nos conecta",
-      description: "La base inquebrantable de nuestro legado.",
-    },
-    {
-      image: "wp-content/uploads/2026/08/tecnologia-image.png",
-      title: "TECNOLOGÍA",
-      subtitle: "La capacidad que nos impulsa",
-      description:
-        "La infraestructura que nos sostiene y garantiza la experiencia.",
-    },
-  ];
+
   return (
     <>
       <section>
