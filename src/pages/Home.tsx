@@ -1,11 +1,11 @@
 import { useState, useEffect } from "react";
+import ModalTiquetes from "../components/ModalTiquetes";
 
 export default function Home() {
   const info = [
     {
       image: "wp-content/uploads/2026/08/tiquetes-image.png",
       title: "TIQUETES",
-      link: "#",
     },
     {
       image: "wp-content/uploads/2026/08/vestimenta-image.png",
@@ -15,27 +15,29 @@ export default function Home() {
     {
       image: "wp-content/uploads/2026/08/horarios-image.png",
       title: "HORARIOS",
-      link: "#",
     },
   ];
   const faqs = [
     {
       title: "¿El hospedaje está incluido?",
-      description: "Sí. El hospedaje está incluido durante las fechas correspondientes al evento.",
+      description:
+        "Sí. El hospedaje está incluido durante las fechas correspondientes al evento.",
     },
     {
       title: "¿Puedo llevar un acompañante?",
-      description: "El acceso al evento es exclusivo para la persona invitada, por lo que no es posible asistir al evento con un acompañante. Sin embargo, tu acompañante puede viajar contigo y disfrutar de la ciudad sin ningún inconveniente a partir de la noche del 5 de [mes]. Además, contará con una tarifa especial en el hotel durante su estadía.",
+      description:
+        "El acceso al evento es exclusivo para la persona invitada, por lo que no es posible asistir al evento con un acompañante. Sin embargo, tu acompañante puede viajar contigo y disfrutar de la ciudad sin ningún inconveniente a partir de la noche del 5 de [mes]. Además, contará con una tarifa especial en el hotel durante su estadía.",
     },
     {
       title: "¿Habrá transporte desde el aeropuerto hasta el hotel?",
-      description: "Sí. El transporte está incluido y contempla el traslado de ida y regreso entre el aeropuerto y el hotel: Aeropuerto → Hotel → Aeropuerto.",
-    }
-    ,
+      description:
+        "Sí. El transporte está incluido y contempla el traslado de ida y regreso entre el aeropuerto y el hotel: Aeropuerto → Hotel → Aeropuerto.",
+    },
     {
       title: "¿A quién puedo contactar si tengo más dudas?",
-      description: "David Vergara - dvergara@laboratorioslegrand.com - +57 300 486 0661",
-    }
+      description:
+        "David Vergara - dvergara@laboratorioslegrand.com - +57 300 486 0661",
+    },
   ];
   const cardsPrimary = [
     {
@@ -93,6 +95,7 @@ export default function Home() {
   const domain = import.meta.env.VITE_WP_DOMAIN;
 
   const [activeIndex, setActiveIndex] = useState<number | null>(null);
+  const [isTicketModalOpen, setIsTicketModalOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const handleToggle = (id: number) => {
     setActiveIndex(activeIndex === id ? null : id);
@@ -162,22 +165,39 @@ export default function Home() {
             <span className="text-primary-red font-semibold">importante</span>
           </h2>
           <div className="flex gap-4 md:gap-0 justify-evenly items-center h-full overflow-x-auto md:overflow-visible scrollbar-hide">
-            {info.map((item, index) => (
-              <a
-                key={index}
-                href={item.link}
-                className="relative w-72 h-96 shrink-0 md:w-1/4 md:h-100 flex items-end justify-center hover:scale-101 transition-all duration-200 cursor-pointer"
-              >
-                <img
-                  src={domain + item.image}
-                  alt=""
-                  className="absolute h-96 md:h-100 w-full object-cover rounded-xl"
-                />
-                <span className="text-center text-white relative pb-4 font-semibold text-xl">
-                  {item.title}
-                </span>
-              </a>
-            ))}
+            {info.map((item, index) =>
+              item.link ? (
+                <a
+                  key={index}
+                  href={item.link}
+                  className="relative w-72 h-96 shrink-0 md:w-1/4 md:h-100 flex items-end justify-center hover:scale-101 transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src={domain + item.image}
+                    alt=""
+                    className="absolute h-96 md:h-100 w-full object-cover rounded-xl"
+                  />
+                  <span className="text-center text-white relative pb-4 font-semibold text-xl">
+                    {item.title}
+                  </span>
+                </a>
+              ) : (
+                <button
+                  key={index}
+                  onClick={() => setIsTicketModalOpen(true)}
+                  className="relative w-72 h-96 shrink-0 md:w-1/4 md:h-100 flex items-end justify-center hover:scale-101 transition-all duration-200 cursor-pointer"
+                >
+                  <img
+                    src={domain + item.image}
+                    alt=""
+                    className="absolute h-96 md:h-100 w-full object-cover rounded-xl"
+                  />
+                  <span className="text-center text-white relative pb-4 font-semibold text-xl">
+                    {item.title}
+                  </span>
+                </button>
+              ),
+            )}
           </div>
         </div>
       </section>
@@ -433,6 +453,10 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <ModalTiquetes
+        isOpen={isTicketModalOpen}
+        onClose={() => setIsTicketModalOpen(false)}
+      />
     </>
   );
 }

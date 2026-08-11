@@ -73,6 +73,12 @@
   transform: translate(-50%,-50%);
 }
 
+#root {
+  background-image: url('http://legrand.local/wp-content/uploads/2026/08/bg-body-scaled.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 768px) {
   .md\:box-shadow-custom {
     box-shadow:
