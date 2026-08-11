@@ -324,7 +324,7 @@ export default function Home() {
               </div>
             ))}
           </div>
-          <div className="rounded-3xl md:rounded-full flex flex-col md:flex-row items-center justify-center md:justify-evenly box-shadow-custom mt-4 py-3 max-w-55 px-4 md:px-0 mx-auto md:max-w-full">
+          <div className="rounded-3xl md:rounded-full flex flex-col md:flex-row items-center justify-center md:justify-evenly box-shadow-custom mt-4 py-3 max-w-55 px-4 md:px-0 mx-auto md:max-w-full bg-white">
             <div className="flex flex-col items-center">
               <img
                 src={`${domain}wp-content/uploads/2026/08/innovacion.png`}
