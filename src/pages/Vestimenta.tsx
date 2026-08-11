@@ -6,8 +6,8 @@ export default function Vestimenta() {
       <section>
         <div className="md:max-w-6xl mx-auto px-6 md:px-0">
           <img
-            src={`${domain}wp-content/uploads/2026/08/legrand-40years.png`}
-            className="max-h-18 md:max-h-32 mx-auto pb-4"
+            src={`${domain}wp-content/uploads/2026/08/235x346.png`}
+            className="max-h-25 md:max-h-32 mx-auto pb-4"
             alt=""
           />
           <p className="text-center font-light text-primary-gray md:text-2xl">

@@ -84,21 +84,34 @@ export default function Footer() {
               SÍGUENOS
             </span>
             <div className="flex items-center gap-4">
-              <a href="https://www.youtube.com/@LaboratoriosLegrand" target="_blank">
+              <a
+                href="https://www.youtube.com/@LaboratoriosLegrand"
+                target="_blank"
+              >
                 <img
                   src={`${domain}wp-content/uploads/2026/08/yt-icon.png`}
                   className="h-7"
                   alt=""
                 />
               </a>
-              <a href="">
+              <a href="https://www.facebook.com/people/Laboratorios-Legrand/100076492012197/">
                 <img
-                  src={`${domain}wp-content/uploads/2026/08/ig-icon.png`}
+                  src={`${domain}wp-content/uploads/2026/08/icono-face.png`}
                   className="h-7"
                   alt=""
                 />
               </a>
-              <a href="https://www.linkedin.com/company/laboratorios-legrand-s.a" target="_blank">
+              <a href="https://www.tiktok.com/@lablegrand_">
+                <img
+                  src={`${domain}wp-content/uploads/2026/08/icono-tik.png`}
+                  className="h-7"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/laboratorios-legrand-s.a"
+                target="_blank"
+              >
                 <img
                   src={`${domain}wp-content/uploads/2026/08/linkedin-icon.png`}
                   className="h-7"

@@ -142,7 +142,7 @@ export default function Home() {
             alt="Imagen principal"
           />
           <img
-            src={`${domain}wp-content/uploads/2026/08/legrand-40years.png`}
+            src={`${domain}wp-content/uploads/2026/08/235x346.png`}
             className="absolute right-0 md:right-16 bottom-4 max-h-18 md:max-h-40"
             alt=""
           />
@@ -420,7 +420,7 @@ export default function Home() {
           <div className="md:max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-4 md:gap-0 md:justify-between relative h-full">
             <div className="md:pb-6 pt-4 md:pt-0">
               <img
-                src={`${domain}wp-content/uploads/2026/08/legrand-40years.png`}
+                src={`${domain}wp-content/uploads/2026/08/235x346.png`}
                 className="h-24 md:h-55"
                 alt=""
               />
