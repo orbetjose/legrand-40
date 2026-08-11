@@ -26,7 +26,7 @@ export default function Home() {
     {
       title: "¿Puedo llevar un acompañante?",
       description:
-        "El acceso al evento es exclusivo para la persona invitada, por lo que no es posible asistir al evento con un acompañante. Sin embargo, tu acompañante puede viajar contigo y disfrutar de la ciudad sin ningún inconveniente a partir de la noche del 5 de [mes]. Además, contará con una tarifa especial en el hotel durante su estadía.",
+        "El acceso al evento es exclusivo para la persona invitada, por lo que no es posible asistir al evento con un acompañante. Sin embargo, tu acompañante puede viajar contigo y disfrutar de la ciudad sin ningún inconveniente a partir de la noche del 5 de septiembre. Además, contará con una tarifa especial en el hotel durante su estadía.",
     },
     {
       title: "¿Habrá transporte desde el aeropuerto hasta el hotel?",
