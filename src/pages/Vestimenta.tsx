@@ -11,7 +11,7 @@ export default function Vestimenta() {
             alt=""
           />
           <p className="text-center font-light text-primary-gray md:text-2xl">
-            AGENDA PRELIMINAR Y CÓDIGOS DE VESTIMENTA
+            <span className="opacity-35">AGENDA PRELIMINAR</span> Y CÓDIGOS DE VESTIMENTA
           </p>
           <p className="text-primary-gray font-semibold text-center">
             Convención 40 Años Laboratorios Legrand - Sofitel Barú
@@ -205,12 +205,10 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-80">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-70">
                 <p className=" py-2 font-semibold ">
                   Mañana, hasta las 02:00 P.M.
                 </p>
-                <p className="pb-4 font-light">Lorem ipsum</p>
-                <p className=" py-2 font-semibold ">Código de vestimenta</p>
                 <p className="pb-4 font-light">
                   (Casual Cómodo / Ropa de Viaje): Prendas prácticas y relajadas
                   para interactuar en los espacios finales y estar listos para
