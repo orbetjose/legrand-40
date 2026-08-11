@@ -312,7 +312,7 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl text-primary-gray">
+                <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl text-primary-gray">
                   <p className="uppercase py-4 font-light">
                     {item.title}{" "}
                     <span className="text-primary-red font-semibold">
@@ -390,7 +390,7 @@ export default function Home() {
                     alt=""
                   />
                 </div>
-                <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl min-h-52 text-primary-gray">
+                <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl min-h-52 text-primary-gray">
                   <p className="uppercase py-2 font-semibold text-primary-red">
                     {item.title}{" "}
                   </p>

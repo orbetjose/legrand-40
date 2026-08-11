@@ -37,7 +37,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-1.png`}
@@ -45,7 +45,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-114">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-114">
                 <p className=" py-2 font-semibold ">Mañana y Mediodía:</p>
                 <p className="pb-4 font-light">
                   La Ruta: Experiencia náutica de bienvenida al aire libre,
@@ -62,7 +62,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-2.png`}
@@ -70,7 +70,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-114">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-114">
                 <p className=" py-2 font-semibold ">Noche:</p>
                 <p className="pb-4 font-light">
                   La Ruta: Apertura oficial del evento, recorrido inmersivo y
@@ -107,7 +107,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-3.png`}
@@ -115,7 +115,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-118">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-118">
                 <p className=" py-2 font-semibold ">Mañana</p>
                 <p className="pb-4 font-light">
                   La Ruta: Sesión central inmersiva en nuestro Salón Principal.
@@ -133,7 +133,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-4.png`}
@@ -141,7 +141,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-118">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-118">
                 <p className=" py-2 font-semibold ">Tarde:</p>
                 <p className="pb-4 font-light">
                   La Ruta: Almuerzo, sesiones dinámicas y tiempo libre para
@@ -153,7 +153,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-5.png`}
@@ -161,7 +161,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-118">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-118">
                 <p className=" py-2 font-semibold ">Noche:</p>
                 <p className="pb-4 font-light">
                   La Ruta: Cierre de la jornada con un encuentro bajo las
@@ -197,7 +197,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden bg-white w-72 md:w-auto h-auto mx-auto">
+            <div className=" overflow-hidden w-72 md:w-auto h-auto mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-3.png`}
@@ -205,7 +205,7 @@ export default function Vestimenta() {
                   alt=""
                 />
               </div>
-              <div className="p-4 border-l border-b border-r border-[#eaeaea] rounded-b-2xl md:min-h-80">
+              <div className="p-4 border-l border-b border-r border-[#eaeaea] bg-white rounded-b-2xl md:min-h-80">
                 <p className=" py-2 font-semibold ">
                   Mañana, hasta las 02:00 P.M.
                 </p>
