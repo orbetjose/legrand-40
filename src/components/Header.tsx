@@ -13,6 +13,41 @@ export default function Header() {
       .catch((error) => console.error("Error fetching menu:", error));
   }, []);
 
+  useEffect(() => {
+    const section = window.location.hash.replace("#", "");
+
+    if (!section) return;
+
+    const tryScroll = () => {
+      const element = document.getElementById(section);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+
+        return true;
+      }
+
+      return false;
+    };
+
+    if (tryScroll()) return;
+
+    const interval = setInterval(() => {
+      if (tryScroll()) {
+        clearInterval(interval);
+      }
+    }, 100);
+
+    setTimeout(() => {
+      clearInterval(interval);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -82,22 +117,18 @@ export default function Header() {
                       </button>
                     </li>
                   );
+                } else {
+                  return (
+                    <li key={index}>
+                      <a
+                        href="/"
+                        className="uppercase pb-1 relative cursor-pointer "
+                      >
+                        {item.name}
+                      </a>
+                    </li>
+                  );
                 }
-                let relativePath = new URL(item.permalink).pathname;
-                if (relativePath.includes("wp")) {
-                  relativePath = relativePath.replace("/wp", "");
-                }
-                return (
-                  <li key={index}>
-                    <a
-                      href={item.permalink}
-                      className={` pb-1 relative cursor-pointer uppercase`}
-                      onClick={() => scrollToSection(namesSections)}
-                    >
-                      {item.name}
-                    </a>
-                  </li>
-                );
               })}
             </ul>
           </div>
@@ -146,22 +177,18 @@ export default function Header() {
                           </button>
                         </li>
                       );
+                    } else {
+                      return (
+                        <li key={index}>
+                          <a
+                            href="/"
+                            className="uppercase pb-1 relative cursor-pointer "
+                          >
+                            {item.name}
+                          </a>
+                        </li>
+                      );
                     }
-                    let relativePath = new URL(item.permalink).pathname;
-                    if (relativePath.includes("wp")) {
-                      relativePath = relativePath.replace("/wp", "");
-                    }
-                    return (
-                      <li key={index}>
-                        <a
-                          href={item.permalink}
-                          className={` pb-1 relative cursor-pointer uppercase`}
-                          onClick={() => scrollToSection(namesSections)}
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    );
                   })}
                 </ul>
               </div>

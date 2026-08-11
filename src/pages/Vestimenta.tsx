@@ -37,7 +37,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden w-72 md:w-auto h-auto mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-1.png`}
@@ -62,7 +62,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-2.png`}
@@ -107,7 +107,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-3.png`}
@@ -133,7 +133,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-4.png`}
@@ -153,7 +153,7 @@ export default function Vestimenta() {
                 </p>
               </div>
             </div>
-            <div className=" overflow-hidden w-72 md:w-auto h-auto  mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto  mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-5.png`}
@@ -197,7 +197,7 @@ export default function Vestimenta() {
             </p>
           </div>
           <div className="grid grid-cols-1 gap-4 md:gap-12 pt-8 ">
-            <div className=" overflow-hidden w-72 md:w-auto h-auto mx-auto">
+            <div className=" overflow-hidden bg-white box-shadow-custom w-72 md:w-auto h-auto mx-auto">
               <div className="relative">
                 <img
                   src={`${domain}wp-content/uploads/2026/08/card-3.png`}
