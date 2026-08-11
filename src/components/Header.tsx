@@ -89,12 +89,13 @@ export default function Header() {
                 }
                 return (
                   <li key={index}>
-                    <button
+                    <a
+                      href={item.permalink}
                       className={` pb-1 relative cursor-pointer uppercase`}
                       onClick={() => scrollToSection(namesSections)}
                     >
                       {item.name}
-                    </button>
+                    </a>
                   </li>
                 );
               })}
@@ -152,12 +153,13 @@ export default function Header() {
                     }
                     return (
                       <li key={index}>
-                        <button
+                        <a
+                          href={item.permalink}
                           className={` pb-1 relative cursor-pointer uppercase`}
                           onClick={() => scrollToSection(namesSections)}
                         >
                           {item.name}
-                        </button>
+                        </a>
                       </li>
                     );
                   })}
