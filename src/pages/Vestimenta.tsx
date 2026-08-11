@@ -3,7 +3,7 @@ export default function Vestimenta() {
 
   return (
     <>
-      <section>
+      <section className="md:pt-0 pt-20">
         <div className="md:max-w-6xl mx-auto px-6 md:px-0">
           <img
             src={`${domain}wp-content/uploads/2026/08/235x346.png`}
@@ -23,12 +23,12 @@ export default function Vestimenta() {
           <div className="flex items-center gap-4 md:max-w-md mx-auto px-4 md:px-0">
             <div className="md:w-50 w-65 h-25 md:h-20 bg-size-[100%_100%] bg-no-repeat relative">
               <img
-                className="absolute"
+                className="absolute max-h-20.25"
                 src={`${domain}wp-content/uploads/2026/08/bg-gold.png`}
                 alt=""
               />
               <p className="text-primary-gold font-semibold leading-5 absolute top-1/2 left-1/2 translate-middle w-full pb-7 ps-3 md:pb-0">
-                DÍA 1: 3 DE SEP
+                DÍA 1: 3 <br />DE SEP
               </p>
             </div>
             <p className="font-semibold text-primary-gray leading-5">
@@ -93,12 +93,12 @@ export default function Vestimenta() {
           <div className="flex items-center gap-4 md:max-w-md mx-auto px-4 md:px-0">
             <div className="w-50 h-26 bg-size-[100%_100%] bg-no-repeat  relative">
               <img
-                className="absolute"
+                className="absolute max-h-26.5"
                 src={`${domain}wp-content/uploads/2026/08/bg-gold.png`}
                 alt=""
               />
               <p className="text-primary-gold font-semibold leading-5 absolute top-1/2 left-1/2 translate-middle w-full ps-5 pe-3 pb-4 md:pb-0">
-                DÍA 2: 4 DE SEP
+                DÍA 2: 4 <br />DE SEP
               </p>
             </div>
             <p className="font-semibold text-primary-gray leading-5">
@@ -183,12 +183,12 @@ export default function Vestimenta() {
           <div className="flex items-center gap-4 md:max-w-md mx-auto px-4 md:px-0">
             <div className="w-50 h-22 bg-size-[100%_100%] bg-no-repeat relative">
               <img
-                className="absolute"
+                className="absolute max-h-22.5"
                 src={`${domain}wp-content/uploads/2026/08/bg-gold.png`}
                 alt=""
               />
               <p className="text-primary-gold font-semibold leading-5 absolute top-1/2 left-1/2 translate-middle w-full ps-3 md:ps-4">
-                DÍA 3: 5 DE SEP
+                DÍA 3: 5 <br />DE SEP
               </p>
             </div>
             <p className="font-semibold text-primary-gray leading-5">

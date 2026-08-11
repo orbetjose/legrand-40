@@ -115,15 +115,15 @@ export default function Home() {
 
   return (
     <>
-      <section className="relative ">
-        <div className="flex justify-between items-center md:max-w-5xl mx-auto md:min-h-90 3xl:h-120 px-4 md:px-0">
-          <div className="md:w-2/5 text-primary-gray pb-4 md:pb-0">
+      <section className="relative md:pt-0 pt-20">
+        <div className="flex flex-col md:flex-row justify-between items-center md:max-w-5xl mx-auto md:min-h-90 3xl:h-120">
+          <div className="md:w-2/5 text-primary-gray pb-4 md:pb-0 px-4 md:px-0">
             <img
               src={`${domain}wp-content/uploads/2026/08/legado-image.png`}
               className="h-12 md:h-18"
               alt=""
             />
-            <h2 className="uppercase pt-4 pb-8 font-light text-lg">
+            <h2 className="uppercase pt-4 pb-4 md:pb-8 font-light text-lg">
               Una historia que{" "}
               <span className="text-primary-red font-montgar capitalize text-xl">
                 trasciende
@@ -138,7 +138,7 @@ export default function Home() {
 
           <img
             src={`${domain}wp-content/uploads/2026/08/imagen-principal.png`}
-            className="md:max-h-90 3xl:max-h-120 absolute right-0 3xl:min-w-200 3xl:object-cover hidden md:block"
+            className="max-h-60 ml-auto md:ml-0 md:max-h-90 3xl:max-h-120 md:absolute right-0 3xl:min-w-200 3xl:object-cover "
             alt="Imagen principal"
           />
           <img
@@ -164,7 +164,7 @@ export default function Home() {
             Informacion{" "}
             <span className="text-primary-red font-semibold">importante</span>
           </h2>
-          <div className="flex gap-4 md:gap-0 justify-evenly items-center h-full overflow-x-auto md:overflow-visible scrollbar-hide">
+          <div className="flex flex-col md:flex-row gap-4 md:gap-0 justify-evenly items-center h-full">
             {info.map((item, index) =>
               item.link ? (
                 <a
@@ -293,11 +293,11 @@ export default function Home() {
             </span>
           </h4>
 
-          <div className="flex md:grid grid-cols-3 gap-4 md:gap-12 pt-8 overflow-x-auto md:overflow-visible scrollbar-hide">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-12 pt-8 overflow-x-auto md:overflow-visible scrollbar-hide">
             {cardsPrimary.map((item, index) => (
               <div
                 key={index}
-                className=" overflow-hidden w-72 md:w-auto h-auto shrink-0"
+                className=" overflow-hidden w-72 md:w-auto h-auto mx-auto"
               >
                 <div className="relative">
                   <img src={domain + item.image} className="" alt="" />
@@ -376,11 +376,11 @@ export default function Home() {
             <br />
             <span className="md:text-2xl">LOS 4 MOMENTOS DEL EVENTO</span>
           </h4>
-          <div className="flex md:grid grid-cols-4 gap-4 md:gap-12 pt-8 overflow-x-auto md:overflow-visible scrollbar-hide">
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-12 pt-8">
             {cardsSecondary.map((item, index) => (
               <div
                 key={index}
-                className=" overflow-hidden w-72 md:w-auto h-auto shrink-0"
+                className=" overflow-hidden w-72 md:w-auto h-auto mx-auto"
               >
                 <div className="relative">
                   <img src={domain + item.image} className="" alt="" />
@@ -426,7 +426,7 @@ export default function Home() {
               />
             </div>
             <div className="md:max-w-110">
-              <p className="md:w-4/5 font-light text-primary-gray text-center md:text-left text-lg md:text-xl">
+              <p className=" mx-auto w-4/5 font-light text-primary-gray text-center md:text-left text-lg md:text-xl">
                 CELEBREMOS JUNTOS CUATRO DÉCADAS DE{" "}
                 <span className="font-semibold">
                   CIENCIA, PASIÓN Y COMPROMISO

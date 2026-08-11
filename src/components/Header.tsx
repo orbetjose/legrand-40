@@ -82,7 +82,7 @@ export default function Header() {
           <div className=" z-50">
             <a href="/" className="flex z-50">
               <img
-                className={`h-24 logo mx-auto absolute -top-4 left-0 hidden md:block`}
+                className={`h-16 top-4 left-4 md:h-24 logo mx-auto absolute md:-top-4 md:left-0 `}
                 src={`${domain}wp-content/uploads/2026/08/logo_40_header.png`}
                 alt=""
               />
@@ -137,11 +137,7 @@ export default function Header() {
             <div
               className={`${menuOpen ? "open" : ""} container nav-container`}
             >
-              <img
-                src={`${domain}wp-content/uploads/2026/08/logo-header.png`}
-                className={`${menuOpen ? "opacity-100" : "opacity-0"} h-10 top-4 left-4 object-contain md:ml-auto mr-6 md:hidden absolute z-1000 transition-all duration-300`}
-                alt=""
-              />
+
               <div className="hamburger-lines" onClick={toggleMenu}>
                 <span className="line line1"></span>
                 <span className="line line2"></span>
