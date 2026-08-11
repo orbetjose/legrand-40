@@ -28,7 +28,7 @@ export default function Vestimenta() {
                 src={`${domain}wp-content/uploads/2026/08/bg-gold.png`}
                 alt=""
               />
-              <p className="text-primary-gold font-semibold leading-5 text-lg absolute top-1/2 left-1/2 translate-middle w-full pb-4 md:pb-7 ps-3 md:ps-4 md:pb-0 pt-3">
+              <p className="text-primary-gold font-semibold leading-5 text-lg absolute top-1/2 left-1/2 translate-middle w-full pb-4 ps-3 md:ps-4 md:pb-0 pt-3">
                 DÍA 1: 3 <br />
                 DE SEP
               </p>
