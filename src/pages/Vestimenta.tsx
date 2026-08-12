@@ -172,9 +172,7 @@ export default function Vestimenta() {
                 </p>
                 <p className=" py-2 font-semibold ">Código de vestimenta</p>
                 <p className="pb-4 font-light">
-                  (Fiesta Blanca): Prendas blancas, doradas o beige, Ropa
-                  ligera, Elegante y completamente blanca (lino, algodón). Usa
-                  accesorios dorados y rojos.
+                  Fiesta Blanca: Etiqueta elegante de clima cálido. Opta por prendas ligeras en lino o algodón, donde el gran protagonista sea el color blanco total o combinaciones sutiles con beige. Resalta tu atuendo utilizando accesorios en tonos dorados y rojos para crear un contraste perfecto.
                 </p>
               </div>
             </div>
